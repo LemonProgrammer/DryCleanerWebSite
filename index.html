@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+<header>
+    <h1>Fernando's Fantastic Forecast</h1>
+</header>
+<section id='mainSection'>
+    <table id='currentForecast'>
+        <thead>
+        <tr>
+            <th colspan="5">
+                <div id="place"></div>
+            </th>
+        </tr>
+        <tr>
+            <th id='city' colspan="5">
+                <div id="input">
+                    <form name="form" method='post'>
+                        City:
+                        <input type="text" name="inputbox" value="Salt Lake City" />
+                        State:
+                        <input type="text" name="inputbox2" value="UT" />
+                        <input type="button" name="button" value="Submit" onClick="sendData(this.form)" />
+                    </form>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th id="Mon">Monday</th>
+            <th id="Tues">Tuesday</th>
+            <th id="Wed">Wednesday</th>
+            <th id="Thurs">Thursday</th>
+            <th id="Fri">Friday</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td id="Mon">
+                <div id="day0"></div>
+            </td>
+            <td id="Tues">
+                <div id="day1"></div>
+            </td>
+            <td id="Wed">
+                <div id="day2"></div>
+            </td>
+            <td id="Thurs">
+                <div id="day3"></div>
+            </td>
+            <td id="Fri">
+                <div id="day4"></div>
+            </td>
+        </tr>
+        <tr>
+            <td id='Monday'>
+                <div id="Mon">
+                    <div id="conditions0"></div>
+                    <div id="conditionsDesc0"></div>
+                    <div id="currentTemp0"></div>
+                </div>
+            </td>
+            <td id='Tuesday'>
+                <div id="Tues">
+                    <div id="conditions1"></div>
+                    <div id="conditionsDesc1"></div>
+                    <div id="currentTemp1"></div>
+                </div>
+            </td>
+            <td id='Wednesday'>
+                <div id="Wed">
+                    <div id="conditions2"></div>
+                    <div id="conditionsDesc2"></div>
+                    <div id="currentTemp2"></div>
+                </div>
+            </td>
+            <td id='Thursday'>
+                <div id="Thurs">
+                    <div id="conditions3"></div>
+                    <div id="conditionsDesc3"></div>
+                    <div id="currentTemp3"></div>
+                </div>
+            </td>
+            <td id='Friday'>
+                <div id="Fri">
+                    <div id="conditions4"></div>
+                    <div id="conditionsDesc4"></div>
+                    <div id="currentTemp4"></div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer>Copyright ©2018 Fernando Blanco</footer>
+
+<link rel="stylesheet" href="Scripts/style.css"/>
+<script src="Scripts/json.js"></script>
+<script src="Scripts/script.js"></script>
+
+</body>
